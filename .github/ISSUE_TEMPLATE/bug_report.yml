@@ -1,0 +1,133 @@
+name: 🐛 Bug Report
+description: Report something that's broken or behaving unexpectedly in TelePortals.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! 🐛
+
+        **Before you start:** please [search existing issues](https://github.com/10pow6/public-teleportals-issues-log/issues?q=is%3Aissue) to avoid duplicates.
+
+        ⚠️ **Security issue?** Stop — do not file it here. See our [Security Policy](https://github.com/10pow6/public-teleportals-issues-log/blob/main/SECURITY.md) and disclose privately via Discord. This includes anything touching the Integration API, Portal Coins, billing, or other users' data.
+
+        🔒 **Redact private data** (tokens, API keys, billing details) from anything you paste or screenshot.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This is not a security vulnerability (those go through the Security Policy, not here).
+          required: true
+        - label: I've removed any private data (tokens, keys, billing info) from this report.
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+      placeholder: Custom short codes on tp.land return a 404 instead of redirecting.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the product?
+      description: Which part of TelePortals is affected?
+      options:
+        - URL shortening / creating links
+        - Redirects (a short link not working)
+        - Dashboard / Portal
+        - Marketplace
+        - Portal Coins / Economy
+        - Analytics
+        - Account / Login
+        - Billing / Subscription
+        - Integration API
+        - UI / Display
+        - Other / Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Which domain?
+      options:
+        - tp.land
+        - tp.city
+        - Both
+        - Not applicable
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us exactly how to trigger the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Do '...'
+        4. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      description: Include any error messages you saw (with private data redacted).
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here if the bug is visual. Remember to redact private data. (Optional but helpful.)
+    validations:
+      required: false
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Account tier (optional)
+      options:
+        - Free
+        - Starter
+        - Professional
+        - Business
+        - Prefer not to say
+    validations:
+      required: false
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop / Laptop
+        - Mobile phone
+        - Tablet
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & OS
+      description: e.g. Chrome 124 on Windows 11, Safari on iOS 17
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Any other context, how often it happens, recent changes, etc.
+    validations:
+      required: false
