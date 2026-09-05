@@ -1,6 +1,6 @@
 # TelePortals — Public Issue Tracker
 
-Welcome! This is the **public bug & feedback tracker** for **TelePortals** — the URL shortener with a management portal, marketplace, Portal Coin economy, and tiered analytics, available at [tp.city](https://tp.city) and [tp.land](https://tp.land).
+Welcome! This is the **public bug & feedback tracker** for **TelePortals** — the short-link layer of the 10pow6 ecosystem (every link is a game piece in BitGlitch and slapget) with a management portal, marketplace, TP6 Coin economy, and tiered analytics, available at [tp.city](https://tp.city) and [tp.land](https://tp.land).
 
 This repository contains **no application source code**. It exists so users can report bugs, request features, and track what we're working on — all in the open.
 
