@@ -26,7 +26,7 @@ Use GitHub's private vulnerability reporting:
 
 You can also open this repository's **Security** tab and click **Report a vulnerability**. Only you and our team can see the report. You need a GitHub account.
 
-**No GitHub account?** Reach us through our community **Discord** and **send a direct message to a staff/admin member**. Let them know you have a security report — please **do not post the details in any public channel**. A staff member will follow up with you privately.
+**No GitHub account?** Reach us through our community **Discord** (linked from the [TelePortals site](https://tp.land)) and **send a direct message to a staff/admin member**. Let them know you have a security report — please **do not post the details in any public channel**. A staff member will follow up with you privately.
 
 Every report should include:
 
