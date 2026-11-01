@@ -1,0 +1,36 @@
+name: Label environment
+
+# Reads the "Environment" answer from a new bug report and applies env: beta or env: prod.
+# Only parses the issue text; never runs anything from the issue.
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const LABELS = {
+              'env: beta': { color: '1d76db', description: 'Reported on the public beta' },
+              'env: prod': { color: 'b60205', description: 'Reported on the live site' },
+            };
+            const body = context.payload.issue.body || '';
+            const m = body.match(/^### Environment\s*\n\s*(.+)$/m);
+            if (!m) return;
+            const answer = m[1].trim().toLowerCase();
+            const label = answer.startsWith('beta') ? 'env: beta'
+                        : answer.startsWith('live') ? 'env: prod'
+                        : null;
+            if (!label) return;
+            try {
+              await github.rest.issues.createLabel({ ...context.repo, name: label, ...LABELS[label] });
+            } catch (e) {
+              if (e.status !== 422) throw e; // 422 = label already exists
+            }
+            await github.rest.issues.addLabels({ ...context.repo, issue_number: context.issue.number, labels: [label] });

@@ -21,7 +21,7 @@ body:
     attributes:
       label: What problem or opportunity does this address?
       description: What's frustrating today, or what would make TelePortals more useful?
-      placeholder: I'd like to set a custom expiration date per link instead of only the tier default.
+      placeholder: I'd like to sort My Portals by grade or by how many clicks they get.
     validations:
       required: true
   - type: textarea
@@ -37,9 +37,9 @@ body:
       label: Which area does this relate to?
       options:
         - URL shortening / links
-        - Dashboard / Portal
-        - Marketplace
-        - Portal Coins / Economy
+        - My Portals / Dashboard
+        - Exchange (marketplace)
+        - TP6 / Economy
         - Analytics
         - Account / Billing
         - Integration API

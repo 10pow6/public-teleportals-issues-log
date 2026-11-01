@@ -10,7 +10,7 @@ body:
 
         **Before you start:** please [search existing issues](https://github.com/10pow6/public-teleportals-issues-log/issues?q=is%3Aissue) to avoid duplicates.
 
-        ⚠️ **Security issue?** Stop — do not file it here. See our [Security Policy](https://github.com/10pow6/public-teleportals-issues-log/blob/main/SECURITY.md) and [report it privately](https://github.com/10pow6/public-teleportals-issues-log/security/advisories/new). This includes anything touching the Integration API, Portal Coins, billing, or other users' data.
+        ⚠️ **Security issue?** Stop — do not file it here. See our [Security Policy](https://github.com/10pow6/public-teleportals-issues-log/blob/main/SECURITY.md) and [report it privately](https://github.com/10pow6/public-teleportals-issues-log/security/advisories/new). This includes anything touching the Integration API, TP6, billing, or other users' data.
 
         🔒 **Redact private data** (tokens, API keys, billing details) from anything you paste or screenshot.
   - type: checkboxes
@@ -33,6 +33,17 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Check your address bar. Beta addresses start with `beta.`.
+      options:
+        - Beta (beta.tp.land / beta.tp.city)
+        - Live (tp.land / tp.city)
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
     id: area
     attributes:
       label: Where in the product?
@@ -40,9 +51,9 @@ body:
       options:
         - URL shortening / creating links
         - Redirects (a short link not working)
-        - Dashboard / Portal
-        - Marketplace
-        - Portal Coins / Economy
+        - My Portals / Dashboard
+        - Exchange (marketplace)
+        - TP6 / Economy
         - Analytics
         - Account / Login
         - Billing / Subscription
@@ -97,12 +108,10 @@ body:
   - type: dropdown
     id: tier
     attributes:
-      label: Account tier (optional)
+      label: Plan (optional)
       options:
         - Free
-        - Starter
-        - Professional
-        - Business
+        - Pro
         - Prefer not to say
     validations:
       required: false

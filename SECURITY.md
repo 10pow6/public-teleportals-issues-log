@@ -12,7 +12,7 @@ This includes (but is not limited to):
 - Account takeover or impersonation
 - Exposed secrets, API keys, tokens, or credentials
 - **Integration API** abuse or authorization bypass
-- Ways to mint, transfer, or spend Portal Coins you shouldn't have
+- Ways to create, transfer, or spend TP6 you shouldn't have
 - Bypassing payment, quotas, or tier limits
 - Accessing, enumerating, or exposing other users' URLs, analytics, or account data
 - Open redirects or abuse of the link‑shortening service
