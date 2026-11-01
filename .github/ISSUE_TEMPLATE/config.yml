@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: 🔒 Report a security vulnerability (private)
+    url: https://github.com/10pow6/public-teleportals-issues-log/security/advisories/new
+    about: Never file security issues publicly. Private to you and our team. Include steps to reproduce and impact.
   - name: 💬 Community Discord
     url: https://tp.land
     about: Questions, help, and general discussion? Join us on Discord (linked from the site).

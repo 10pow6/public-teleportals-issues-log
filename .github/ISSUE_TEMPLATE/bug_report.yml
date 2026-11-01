@@ -10,7 +10,7 @@ body:
 
         **Before you start:** please [search existing issues](https://github.com/10pow6/public-teleportals-issues-log/issues?q=is%3Aissue) to avoid duplicates.
 
-        ⚠️ **Security issue?** Stop — do not file it here. See our [Security Policy](https://github.com/10pow6/public-teleportals-issues-log/blob/main/SECURITY.md) and disclose privately via Discord. This includes anything touching the Integration API, Portal Coins, billing, or other users' data.
+        ⚠️ **Security issue?** Stop — do not file it here. See our [Security Policy](https://github.com/10pow6/public-teleportals-issues-log/blob/main/SECURITY.md) and [report it privately](https://github.com/10pow6/public-teleportals-issues-log/security/advisories/new). This includes anything touching the Integration API, Portal Coins, billing, or other users' data.
 
         🔒 **Redact private data** (tokens, API keys, billing details) from anything you paste or screenshot.
   - type: checkboxes
